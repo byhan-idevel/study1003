@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c){
+                let answer="YES", max;
+                const arr=[];
+                arr.push(a);
+                arr.push(b);
+                arr.push(c);
+                arr.sort();
+                max = arr[2];
+                if(max < arr[0]+ arr[1]) {
+                    answer = "NO";
+                }
+                return answer;
+            }
+
+            console.log(solution(13, 33, 17));
+        </script>
+    </body>
+</html>
