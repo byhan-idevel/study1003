@@ -6,12 +6,8 @@
     <body>
         <script>
             function solution(a, b, c){
-                const arr=[];
-                arr.push(a);
-                arr.push(b);
-                arr.push(c);
-                arr.sort();
-                return arr[0];
+
+                return Math.min(a,b,c);
             }
             console.log(solution(2, 5, 1));
         </script>
